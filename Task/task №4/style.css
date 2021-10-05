@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Gluten', cursive;
+  color: #cccccc;
+  background: #282828;
+}
+
+:root {
+  --main-bg-color: #cccccc;
+  --bg: #282828;
+}
+/* style clock */
+
+.clock {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  padding: 30px;
+  border: 6px solid var(--bg);
+  box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5),
+              inset 4px 4px 10px rgba(0, 0, 0, 0.5),
+              inset -4px -4px 10px rgba(67, 67, 67, 0.5),
+              4px 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+.clock__face {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background: var(--bg);
+  z-index: 2;
+  overflow: hidden;
+}
+
+.clock__face::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: var(--bg);
+  box-shadow: 0px 0px 5px rgb(67 67 67 / 50%), 
+              inset 0px 0px 10px rgb(0 0 0 / 20%), 
+              inset -4px -4px 10px rgb(67 67 67 / 25%), 
+              5px 5px 10px rgb(0 0 0 / 70%);
+  border-radius: 100%;
+  z-index: 10;
+}
+
+.clock__one {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  height: 100%;
+  padding: 5px;
+}
+
+.clock__two {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+}
+
+.clock__three,
+.clock__four,
+.clock__five,
+.clock__six {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 5px;
+}
+
+.clock__point {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--main-bg-color);;
+}
+
+.clock__three {
+  transform: rotate(30deg);
+}
+
+.clock__four {
+  transform: rotate(60deg);
+}
+
+.clock__five {
+  transform: rotate(120deg);
+}
+
+.clock__six {
+  transform: rotate(150deg);
+}
+
+/* style hand */
+
+.clock__hand {
+  margin-left: -8px;
+  margin-top: -8px;
+  position: absolute;
+  display: block;
+  height: 1em;
+  width: 1em;
+  left: 50%;
+  top: 50%;
+}
+
+.clock__hour::after,
+.clock__min::after,
+.clock__sec::after {
+  content: "";
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  display: block;
+  margin-bottom: 1px;
+  border-radius: 6px 6px 0 0;
+}
+
+.clock__hour::after {
+  height: 85px;
+  width: 5px;
+  margin-left: -2.25px;
+  background: var(--main-bg-color);;
+  border: 1px solid #636363;
+  z-index: 3;
+}
+
+.clock__min::after {
+  height: 100px;
+  width: 3px;
+  margin-left: -1.25px;
+  background: var(--main-bg-color);;
+  border: 1px solid #636363;
+  z-index: 4;
+}
+
+.clock__sec::after {
+  height: 125px;
+  width: 1px;
+  margin-left: -0.25px;
+  background: #dc143c;
+  z-index: 5;
+}
