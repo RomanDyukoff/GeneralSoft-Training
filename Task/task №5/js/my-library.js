@@ -69,7 +69,7 @@
     }
 
     function isNaN(instace) {
-      return typeof instace === 'NaN';
+      return instace !== instace;
     }
 
     var expObj = {
