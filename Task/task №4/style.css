@@ -8,7 +8,7 @@ body {
   display: flex;
   align-items: center;
   min-height: 100vh;
-  font-family: 'Gluten', cursive;
+  /* font-family: 'Gluten', cursive; */
   color: #cccccc;
   background: #282828;
 }
