@@ -87,6 +87,6 @@ MyArray.prototype.forEach = function(callback) {
 var arr = new MyArray([3, 5, 2, 4, 1])
 
 
-console.log(arr);
+// console.log(arr);
 
 
