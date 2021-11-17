@@ -4,10 +4,64 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>ToDo List Application</title>
 </head>
 <body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <h1 class="header__title">Welcome to ToDo</h1>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <!-- /.header__wrapper -->
+    </div>
+    <!-- /.container -->
+  </header>
+  <main class="main">
+    <section class="user">
+      <div class="container">
+        <div class="user__wapper">
+          <div class="user__info">
+            <h2 class="user__title">Add Person</h2>
+            <ul class="user__list">
+              <li class="user__item">
+                <label class="user__enter">
+                  <span class="user__first">First Name:</span>
+                  <input type="text">
+                </label>
+              </li>
+              <li class="user__item">
+                <label class="user__enter">
+                  <span class="user__last">Last Name:</span>
+                  <input type="text">
+                </label>
+              </li>
+              <li class="user__item">
+                <label class="user__enter">
+                  <span class="user__age">Age:</span>
+                  <input type="text">
+                </label>
+              </li>
+              <li class="user__item">
+                <button class="user__button">Add</button>
+              </li>
+            </ul>
+          </div>
+          <!-- /.user__info -->
+        </div>
+        <!-- /.user__wapper -->
+      </div>
+      <!-- /.container -->
+    </section>
+  </main>
+
   <script src="js/main.js"></script>
 </body>
 </html>
