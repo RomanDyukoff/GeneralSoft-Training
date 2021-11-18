@@ -3,9 +3,10 @@ function totalSquare(array) {
   let sum = 0;
   let arr = array;
 
-  for (let i = 0; i < arr.length; i++) {
-    sum += arr[i].square() 
+  for(let item of arr) {
+    sum += item.square()
   }
+
   return sum
 }
 
