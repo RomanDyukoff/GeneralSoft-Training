@@ -32,25 +32,25 @@
             <h2 class="user__title">Add Person</h2>
             <ul class="user__list">
               <li class="user__item">
-                <label class="user__enter">
+                <label for="name">
                   <span class="user__first">First Name :</span>
-                  <input class="user__input" id="name" type="text" placeholder="Name...">
+                  <input class="user__input" id="name" name="name" type="text" placeholder="Name..." required>
                 </label>
               </li>
               <li class="user__item">
-                <label class="user__enter">
+                <label for="lastname">
                   <span class="user__last">Last Name :</span>
-                  <input class="user__input" id="lastname" type="text" placeholder="Last Name...">
+                  <input class="user__input" id="lastname" name="lastname" type="text" placeholder="Last Name...">
                 </label>
               </li>
               <li class="user__item">
-                <label class="user__enter">
+                <label for="age">
                   <span class="user__age">Age :</span>
-                  <input  class="user__input" id="age" type="text" placeholder="Age...">
+                  <input  class="user__input" id="age" name="age" type="text" placeholder="Age...">
                 </label>
               </li>
               <li class="user__item">
-                <button class="user__button">Add</button>
+                <button class="user__button" type="submit">Add</button>
               </li>
             </ul>
           </div>

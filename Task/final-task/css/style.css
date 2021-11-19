@@ -140,7 +140,7 @@ input:checked + .slider:before {
   padding: 0;
 }
 
-.user__enter {
+.user__item label {
   cursor: pointer;
 }
 
@@ -173,15 +173,20 @@ input:checked + .slider:before {
   padding: 8px 16px;
   border: 0;
   border-radius: 8px;
-  background: #2761f1;
+  background: #60f127;
   cursor: pointer;
 }
 
 .user__button:hover {
-  background: #0046f7;
+  background: #87f55b;
 }
 
 .user__button:focus {
   outline: none;
   box-shadow: 0 0 0 2px #cbd6ee;
+}
+
+.user__button:disabled {
+  background: #ee2525;
+  cursor: not-allowed;
 }
