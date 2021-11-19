@@ -21,11 +21,12 @@ body {
 .header__wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .header__title {
   font-size: 30px;
+  text-align: center;
   width: 345px;
   transition: all 0.3s;
 }
@@ -111,21 +112,25 @@ input:checked + .slider:before {
   height: 80vh;
 }
 
+.user__title {
+  margin: 0;
+}
+
 .user__info {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 400px;
-  height: 400px;
-  padding: 10px 0;
+  width: 450px;
+  height: 450px;
+  padding: 30px 0;
   border: 1px solid #dddcdc;
   border-radius: 30px;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .user__list {
-  height: 80%;
+  height: 75%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -135,6 +140,48 @@ input:checked + .slider:before {
   padding: 0;
 }
 
-/* .user__enter {
+.user__enter {
+  cursor: pointer;
+}
 
-} */
+.user__input {
+  height: 30px;
+  margin-left: 10px;
+  padding: 20px 0 20px 20px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 3px 3px 20px 3px rgb(0 0 0 / 20%);
+  outline: none;
+}
+
+.user__input::-webkit-input-placeholder {
+  font-size: 12px;
+  opacity: 0.3;
+}
+
+.user__input:focus::-webkit-input-placeholder {
+  text-indent: 200px;
+  transition: text-indent 0.9s;
+}
+
+.user__button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 16px;
+  min-width: 100px;
+  padding: 8px 16px;
+  border: 0;
+  border-radius: 8px;
+  background: #2761f1;
+  cursor: pointer;
+}
+
+.user__button:hover {
+  background: #0046f7;
+}
+
+.user__button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #cbd6ee;
+}
