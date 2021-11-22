@@ -40,13 +40,13 @@
               <li class="user__item">
                 <label for="lastname">
                   <span class="user__last">Last Name :</span>
-                  <input class="user__input" id="lastname" name="lastname" type="text" placeholder="Last Name...">
+                  <input class="user__input" id="lastname" name="lastname" type="text" placeholder="Last Name..." required>
                 </label>
               </li>
               <li class="user__item">
                 <label for="age">
                   <span class="user__age">Age :</span>
-                  <input  class="user__input" id="age" name="age" type="text" placeholder="Age...">
+                  <input  class="user__input" id="age" name="age" type="number" placeholder="Age..." required>
                 </label>
               </li>
               <li class="user__item">
@@ -57,6 +57,27 @@
           <!-- /.user__info -->
         </div>
         <!-- /.user__wapper -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <section class="todo">
+      <div class="container">
+        <div class="todo__wrapper">
+          <div class="todo__head">
+            <h2 class="todo__title">Welcome, Roma here are your tasks</h2>
+            <label class="todo__label" for="create">
+              <input  class="todo__input" name="create" type="text" placeholder="tasks..." required>
+              <button class="todo__button" type="button">Add</button>
+            </label>
+          </div>
+          <!-- /.todo__head -->
+          <ul class="todo__list">
+            <li class="todo__item done">task 1</li>
+            <li class="todo__item">task 2</li>
+            <li class="todo__item">task 3</li>
+          </ul>
+        </div>
+        <!-- /.todo__wrapper -->
       </div>
       <!-- /.container -->
     </section>

@@ -1,21 +1,30 @@
 const userName = document.getElementById('name'),
       userlastName = document.getElementById('lastname'),
       userAge = document.getElementById('age'),
-      userBtn = document.querySelector('.user__button');
-      disableButton = true;
+      userBtn = document.querySelector('.user__button'),
+      input = document.querySelector('.user__input');
+const todoUser = [];
 
-const todoUser = [];      
+
+
+function disabledBtn() {
+  userBtn.disabled = true;
+}
+
+function enableBtn() {
+  userBtn.disabled = false;
+}
+      
 
 userBtn.addEventListener('click', () => {
-  
+
   const user = {
     name: userName.value,
     lastName: userlastName.value,
     age: userAge.value,
   }
-  
-  todoUser.push(user);
-
-  console.log(todoUser);
-
 })
+
+
+
+
