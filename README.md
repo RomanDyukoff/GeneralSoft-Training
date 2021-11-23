@@ -1,2 +1,2 @@
 # GeneralSoft-Training
-https://GeneralSoft-Training/Task/final-task
+https://github.com/RomanDyukoff/GeneralSoft-Training/tree/master/Task/final-task
